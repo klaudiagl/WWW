@@ -1,0 +1,364 @@
+@charset "UTF-8";
+
+*{outline: 0;}
+
+html, body, div{
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font-weight: normal;
+  vertical-align: baseline;
+  background: transparent; }
+
+  *,
+  *:before,
+  *:after {
+    box-sizing: inherit; }
+
+html {
+  box-sizing: border-box; }
+
+body{
+  background-color: #e4ddde;}
+
+.container {
+  margin: 1em auto 0 auto;
+  width: 100%;
+  max-width: 960px;
+  background: #ffffff;
+  position: relative; }
+
+header{
+  display:block;
+  padding: 0.5em 1em 0.25em 1em;}
+
+.homepagelink:link, .homepagelink:visited, .homepagelink:hover, .homepagelink:active{
+  text-decoration: none;
+  color: inherit;
+}
+.menu a:hover, .dalej:hover{
+  color: #FFFFFF;
+  background-color: #554747;}
+
+  .menu a:hover{
+    color: #FFFFFF;
+    background-color: #ff5e00;}
+
+#head{
+  margin-left: 1em;
+  margin-bottom: 0.5em;
+  align-content: stretch;}
+
+clearfix:after, .row:after {
+  display: block;
+  clear: both;
+  content: ''; }
+
+.row + .row {
+  margin: 1em 0.5em 2em 0.5em;}
+
+
+    .blue{
+      background: linear-gradient(to bottom left, #554747, #a31611 40%);
+      color: #FFFFFF;}
+
+    .panel{
+      display: block;
+      margin: 0 0 0 0;
+      width: 100%;
+      position: absolute; top: inherit;
+      padding: 0.1em 0.25em 0.1em 0.25em ;}
+
+
+
+  /* HEADERS */
+  h1 {
+    font-size: 1.7em;
+    text-shadow: 1px 1px 1px #000000;}
+
+  h2 {
+    font-size: 1.625em;}
+
+  h3 {
+    font-size: 1em;}
+
+  h4 {
+    font-size:0.9em;}
+  .tablinks{
+      text-align: center;
+      font-size: 0.9em;
+    }
+  h1, h2, h3,h4{
+      letter-spacing: 1px;
+      line-height: 1.4;
+      display: table-row;}
+  .frame{
+    font-size: 0.9em;
+  }
+
+  #mapa{
+    display: none;
+  }
+
+  @media (min-width: 43.75em) {
+    #mapa{
+      display: block;
+      align-items: center;
+      width: 94%;
+      margin-left: 3%;
+      margin-right: 3%;
+    }
+
+    h1 {
+      font-size: 2.5em;}
+    h2 {
+      font-size: 2em;}
+    h3 {
+      font-size: 1.5em;}
+    h4 {
+    font-size: 1.22222em;}
+    .tablinks{
+      text-align: center;
+      font-size: 1.22222em;
+    }
+    .frame{
+      font-size: 1em;
+    }
+  }
+
+  @media (min-width: 56.25em) {
+    h1 {
+      font-size: 2.75em;}
+    h2 {
+      font-size: 2.25em;}
+    h3 {
+      font-size: 1.75em;}
+    h4 {
+      font-size: 1.25em;}
+    .tablinks{
+      text-align: center;
+      font-size: 1.25em;
+    }
+
+    .frame{
+      font-size: 1em;
+    }
+  }
+
+.footer{
+  background-color: #554747;
+  width: 100%;
+  margin-top: 10em;
+  padding-left: 5%;
+  padding-right: 5%;
+  overflow: auto;
+}
+
+
+.menu a{
+  float: right;
+  width: 30%;
+  font-size: 1em;
+  text-decoration: none;
+  text-align: center;
+  color: #FFFFFF;
+  margin: 1em 1em 1em 1em;
+  background-color: #a1a1a0;
+}
+
+#logopwr{
+  display: none;
+}
+
+
+@media only screen and (min-width: 43.75em) {
+  .menu a{
+    float: right;
+    font-size: 1.3em;
+    width: 20%;
+    text-decoration: none;
+    text-align: center;
+    color: #FFFFFF;
+    margin: 1em 1em 1em 1em;
+    background-color: #a1a1a0;}
+
+  #logopwr{
+    display: block;
+    float: left;
+    width: 30%;
+    margin: 1em 1em 1em 1em;}
+}
+
+@media only screen and (min-width: 56.25em) {
+  .menu a{
+    float: right;
+    width: 15%;
+    font-size: 1.5em;
+    text-decoration: none;
+    text-align: center;
+    color: #FFFFFF;
+    margin: 1em 1em 1em 1em;
+    background-color: #a1a1a0;}
+
+  #logopwr{
+    display: block;
+    float: left;
+    width: 25%;
+    margin: 1em 1em 1em 1em;}
+}
+
+.footerdescription{
+  color: #FFFFFF;
+  line-height: 1;
+}
+
+/* Style the tab */
+.tab {
+    overflow: hidden;
+    margin: 1.5em 1.5em auto 1.5em;
+    border: 2px solid #a1a1a0;
+    background-color: #554747;
+}
+
+/* Style the buttons that are used to open the tab content */
+.tab button {
+    width: 33%;
+    margin-right: 0.5%;
+    background-color: inherit;
+    float:left;
+    border: none;
+    color:#ffffff;
+    transition: 0.3s;
+}
+
+.tab button:last-of-type{
+  margin-right: 0;
+}
+/* Change background color of buttons on hover */
+.tab button:hover, .tab button.active {
+    background-color: #ff5e00;
+}
+
+
+.tabcontent {
+    display: none;
+    padding: 2em 2em 2em 2em ;
+    margin-left: 1.5em;
+    margin-right: 1.5em;
+    color: #554747;
+    background-color: #e4ddde;
+    border: 2px solid #a1a1a0;
+    border-top: none;
+}
+
+.cityname{
+  color: #a31611;
+}
+
+
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+.mySlides {
+    display: none;
+}
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+ .slideshow-container{
+   width: 80%;
+ }
+
+#dots{
+  text-align: center;
+}
+
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #554747;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #a31611;
+}
+
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+.videowrapper {
+	position: relative;
+	padding-bottom: 56.25%; /* 16:9 */
+	padding-top: 25px;
+	height: 0;
+}
+
+.videowrapper2 {
+	position: relative;
+	padding-bottom: 42.51%;
+	height: 0;
+}
+
+.videowrapper iframe, .videowrapper2 iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}

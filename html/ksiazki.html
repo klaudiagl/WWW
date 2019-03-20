@@ -1,0 +1,84 @@
+﻿<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8">
+  <title>Klaudia Głocka- Semestr I</title>
+  <meta name="description" content="Projekt związany z realizacją kursu Nowoczesnych Technologii WWW dla studentów informatyki WPPT PWr.">
+  <meta name="author" content="Klaudia Głocka">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link href='../css/ksiazki.css' rel='stylesheet'>
+
+</head>
+
+<body>
+  <div class="container">
+    <header class="row blue">
+      <a class="homepagelink" href="homepage.html">
+        <div id="head">
+          <h1>Klaudia Głocka</h1>
+          <h3>przygody z edukacją</h3>
+          <h4>Książki</h4>
+        </div>
+      </a>
+    </header>
+    <div class="row" id="contentcontainer">
+      <h2>Ulubione tytuły</h2>
+
+        <button class="tytul">T.H. Cormen, Ch.E. Leiserson R.L. Rivest
+          <p>Wprowadzenie do algorytmów</p>
+        </button>
+        <div class="panel">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent in malesuada lorem. Quisque a tortor dignissim, pretium odio vitae, vehicula nulla. Proin condimentum pretium arcu. Suspendisse sed velit urna. Morbi ac urna non libero vehicula feugiat. Duis quis magna commodo orci scelerisque bibendum. Vivamus tempor ex ac diam congue, a vehicula massa tincidunt. Vivamus ut dapibus nulla. Nulla facilisi. Ut venenatis quis est sed rutrum. Suspendisse viverra nunc ut tincidunt gravida. Mauris erat sapien, lacinia non tortor at, sagittis sollicitudin ipsum. Etiam quis urna in arcu mattis feugiat. Pellentesque eleifend placerat nisl vitae auctor.</p>
+        </div>
+
+        <button class="tytul">J.E. Hopcroft, J.D. Ullman
+          <p>Wprowadzenie do teorii automatów, języków i obliczeń</p>
+        </button>
+        <div class="panel">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent in malesuada lorem. Quisque a tortor dignissim, pretium odio vitae, vehicula nulla. Proin condimentum pretium arcu. Suspendisse sed velit urna. Morbi ac urna non libero vehicula feugiat. Duis quis magna commodo orci scelerisque bibendum. Vivamus tempor ex ac diam congue, a vehicula massa tincidunt. Vivamus ut dapibus nulla.</p>
+        </div>
+
+
+        <button class="tytul">Ch.H. Papadimitriou
+          <p>Złożoność obliczeniowa</p>
+        </button>
+        <div class="panel">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent in malesuada lorem. Quisque a tortor dignissim, pretium odio vitae, vehicula nulla. Proin condimentum pretium arcu.</p>
+        </div>
+
+      </div>
+
+      <script>
+        var acc = document.getElementsByClassName("tytul");
+        var i;
+
+        for (i = 0; i < acc.length; i++) {
+            acc[i].addEventListener("click", function() {
+                this.classList.toggle("active");
+                var panel = this.nextElementSibling;
+                if (panel.style.display === "block") {
+                    panel.style.display = "none";
+                } else {
+                    panel.style.display = "block";
+                }
+            });
+        }
+      </script>
+
+    <div class="footer">
+        <div class="row menu">
+          <img id="logopwr" src="../images/logo.png" alt="Logo PWr"/>
+          <a href="http://wppt.pwr.edu.pl/">WPPT</a>
+          <a href="http://pwr.edu.pl/">PWr</a>
+        </div>
+
+        <div class="row footerdescription">
+          <p>Projekt związany z realizacją kursu Nowoczesnych Technologii WWW dla studentów informatyki WPPT PWr, w semestrze zimowym 2017/2018.</p>
+          <p>Autor: Klaudia Głocka</p>
+          <p>Kontakt: 221525@student.pwr.edu.pl</p>
+        </div>
+      </div>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,107 @@
+﻿<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8">
+  <title>Klaudia Głocka- Semestr I</title>
+  <meta name="description" content="Projekt związany z realizacją kursu Nowoczesnych Technologii WWW dla studentów informatyki WPPT PWr.">
+  <meta name="author" content="Klaudia Głocka">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link href='../css/podroze.css' rel='stylesheet'>
+  <script src="../js/podroze.js"></script>
+</head>
+
+<body>
+
+  <div class="container">
+    <header class="row blue">
+      <a class="homepagelink" href="homepage.html">
+        <div id="head">
+          <h1>Klaudia Głocka</h1>
+          <h3>przygody z edukacją</h3>
+          <h4>Podróże</h4>
+        </div>
+      </a>
+    </header>
+
+
+    <div class="row">
+      <img id="mapa" src="../images/mapa.jpg"/>
+    </div>
+
+    <div class="row">
+      <div class="tab">
+        <button class="tablinks" onclick="openCity(event, 'Londyn')">Londyn</button>
+        <button class="tablinks" onclick="openCity(event, 'Paryż')">Paryż</button>
+        <button class="tablinks" onclick="openCity(event, 'Tokio')">Tokio</button>
+      </div>
+
+      <!-- Tab content -->
+      <div id="Londyn" class="tabcontent">
+        <h3 class="cityname">Londyn</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent in malesuada lorem. Quisque a tortor dignissim, pretium odio vitae, vehicula nulla. Proin condimentum pretium arcu. Suspendisse sed velit urna. Morbi ac urna non libero vehicula feugiat. Duis quis magna commodo orci scelerisque bibendum. Vivamus tempor ex ac diam congue, a vehicula massa tincidunt. Vivamus ut dapibus nulla.</p>
+        <div class="slideshow-container">
+          <!-- Full-width images with number and caption text -->
+          <div class="mySlides fade">
+            <img src="../images/londyn/img1.jpg" style="width:100%">
+            <div class="text">Budki telefoniczne</div>
+          </div>
+
+          <div class="mySlides fade">
+            <img src="../images/londyn/img2.jpg" style="width:100%">
+            <div class="text">Tower Bridge</div>
+          </div>
+
+          <div class="mySlides fade">
+            <img src="../images/londyn/img3.jpg" style="width:100%">
+            <div class="text">Big Ben</div>
+          </div>
+
+          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        <br>
+
+        <div id="dots">
+          <span class="dot" onclick="currentSlide(1)"></span>
+          <span class="dot" onclick="currentSlide(2)"></span>
+          <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+      </div><!-- end London -->
+
+      <div id="Paryż" class="tabcontent">
+        <h3 class="cityname">Paryż</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent in malesuada lorem. Quisque a tortor dignissim, pretium odio vitae, vehicula nulla. Proin condimentum pretium arcu. Suspendisse sed velit urna. Morbi ac urna non libero vehicula feugiat. Duis quis magna commodo orci scelerisque bibendum. Vivamus tempor ex ac diam congue, a vehicula massa tincidunt. Vivamus ut dapibus nulla. Nulla facilisi. Ut venenatis quis est sed rutrum. Suspendisse viverra nunc ut tincidunt gravida. Mauris erat sapien, lacinia non tortor at, sagittis sollicitudin ipsum. Etiam quis urna in arcu mattis feugiat. Pellentesque eleifend placerat nisl vitae auctor.</p>
+        <div class="videowrapper">
+          <iframe width="560" height="349" src="https://www.youtube.com/embed/f-3QQTM76Xk?controls=0&showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        </div>
+      </div>
+
+
+      <div id="Tokio" class="tabcontent">
+        <h3 class="cityname">Tokio</h3>
+        <div class="videowrapper2"><iframe src='https://gfycat.com/ifr/CarefulConstantEyra?controls=0' frameborder='0' scrolling='no' allowfullscreen></iframe></div>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam mollis feugiat mauris, in porta lacus ullamcorper quis. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nullam aliquet ut libero sit amet suscipit. In erat elit, iaculis et ligula quis, aliquet rhoncus nisl. Nunc id sem placerat risus bibendum lacinia ut nec purus. In fermentum tempus massa non lacinia. Fusce faucibus efficitur hendrerit. Maecenas ornare, turpis vel feugiat tempor, sem lacus tristique nisi, sed mollis quam nunc a felis. Nunc sit amet congue ipsum. Suspendisse non metus ullamcorper, accumsan magna rhoncus, consectetur erat. Sed finibus non urna eget blandit. Mauris euismod, mauris ac imperdiet fringilla, dolor risus scelerisque nulla, at accumsan eros tellus ut mi. Pellentesque tempus mi ac tortor venenatis sodales. Aenean ut fermentum elit. Sed ultricies aliquam mi, et rutrum sapien.
+        </p>
+      </div>
+
+    </div>
+
+
+    <div class="footer">
+        <div class="row menu">
+          <img id="logopwr" src="../images/logo.png" alt="Logo PWr"/>
+          <a href="http://wppt.pwr.edu.pl/">WPPT</a>
+          <a href="http://pwr.edu.pl/">PWr</a>
+        </div>
+
+        <div class="row footerdescription">
+          <p>Projekt związany z realizacją kursu Nowoczesnych Technologii WWW dla studentów informatyki WPPT PWr, w semestrze zimowym 2017/2018.</p>
+          <p>Autor: Klaudia Głocka</p>
+          <p>Kontakt: 221525@student.pwr.edu.pl</p>
+        </div>
+      </div>
+
+</div>
+</body>
+</html>
